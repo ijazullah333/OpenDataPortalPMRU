@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-logo {
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .main-logo {
+    height: 50px;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: #2e2e2e;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-banner {
+  background-image: url("../img/poster.jpg");
+  background-position: center;
+  height: 60vh;
+  background-size: cover;
+}
+
+.main-search-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main-search-wrapper .main-search-box {
+  width: 70%;
+  padding: 10px;
+  border: #cacaca solid 1px;
+  height: 55px;
+}
+
+.main-categories .col {
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main-categories .col img {
+  height: 75%;
+}
+
+.main-categories .col img:hover {
+  border-radius: 50%;
+  padding: 5px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.main-banner-text {
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .main-banner-text {
+    font-size: 25px;
+  }
+}
+
+.main-banner-subtitle {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .main-banner-subtitle {
+    font-size: 12px;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #2d3436;
+  min-height: 200px;
+  padding: 20px;
+}
+/*# sourceMappingURL=main.css.map */
