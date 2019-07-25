@@ -4,7 +4,6 @@ $light-background:#f2f2f2;
 $dark:#2d3436;
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
   
-
 *{
     padding: 0;
     box-sizing: border-box;
@@ -15,8 +14,7 @@ $dark:#2d3436;
     @media (max-width: 768px) {
         height:50px;
     }
-    
-
+   
 }
 h1,h2,h3,h4{
     color: rgb(46, 46, 46);
@@ -27,8 +25,6 @@ h1,h2,h3,h4{
     background-position: center;
     height: 60vh;
     background-size: cover;
-
-   
 
 }
 
@@ -56,23 +52,34 @@ h1,h2,h3,h4{
         align-items: center;
        // background-color: $light-color;
         cursor: pointer;
+        
 
         // &:hover{
         //     background-color: $light-color-hover;
         //     border-radius:50%;
         // }
         img{
-            height: 75%;
+            height: 100%;
+            color: gray;
+               
             
             &:hover{
                // background-color: $light-color-hover;
-                border-radius:50%;
+               // border-radius:50%;
                 padding: 5px;
                 transition: 0.2s ease;
             }
            
         }
     
+    }
+    subtitle{
+        
+
+        @media (max-width:768px) {
+            font-size: 12px;
+        
+        }
     }
     
 } 
