@@ -1,233 +1,359 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
- 
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <meta name="theme-color" content="#fafafa">
+  <body class="w-100">
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-</head>
+    <!-- Add your site or application content here -->
 
-<body class="w-100">
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <div class="wrapper">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <a class="navbar-brand" href="#">
+          <img class="main-logo" src="img/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Add your site or application content here -->
-
-<div class="wrapper">
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <a class="navbar-brand" href="#">
-      <img class="main-logo" src="img/logo.png"  alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Organizations</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Topics
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Organizations</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="https://demo.ckan.org/about" tabindex="-1" aria-disabled="true"
+                >About Us</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <div class="w-100 main-banner d-flex  justify-content-center">
+        <div class="d-flex flex-column justify-content-center">
+          <div>
+            <h1 class="text-center main-banner-text">
+              The Home of KP Government's Open Data Portal
+            </h1>
+            <p class="mx-auto text-center w-75 main-banner-subtitle">
+              Here you will find data, tools, and resources to conduct research,
+              develop web and mobile applications, design data visualizations,
+              and more.
+            </p>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">About Us</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>  
-<!-- Navbar End -->
-  <div class="w-100 main-banner d-flex  justify-content-center">
-    <div class="d-flex flex-column justify-content-center">
 
-      <div>
-        <h1 class="text-center main-banner-text">The Home of KP Government's Open Data Portal</h1>
-        <p class="mx-auto text-center w-75 main-banner-subtitle">Here you will find data, tools, and resources to conduct research, develop web and mobile applications, design data visualizations, and more.</p>
-      </div>
-
-      <div class="main-search-wrapper">    
-        
-          <div class="input-group">
-            <input type="text" class="form-control main-search-box shadow" placeholder="Start searching here...">
-            <div class="input-group-append">
-              <button class="btn btn-success" type="button">
-                <i class="pl-2 pr-2 fa fa-search"></i>
-              </button>
+          <div class="main-search-wrapper">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control main-search-box shadow"
+                placeholder="Start searching here..."
+              />
+              <div class="input-group-append">
+                <button class="btn btn-success" type="button">
+                  <i class="pl-2 pr-2 fa fa-search"></i>
+                </button>
+              </div>
             </div>
           </div>
-          
-          
-        
+        </div>
       </div>
-     
 
-    </div>
-  </div>
+      <!-- Categories Start-->
+      <div style="background-color: #f2f2f288;  ">
+        <h2 class="text-center p-3">Search By Topics</h2>
 
-<!-- Categories Start-->
-<div style="background-color: #f2f2f288;  ">
-<h2 class="text-center p-3">Search By Topics</h2>
-
-<div class="container border-bottom">
-    
-  <div  class="row main-categories d-flex justify-content-center">
-      
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-
-      <img src="/img/icons/education.svg" alt="Education Tag">
-      <subtitle class="text-center">Education</subtitle>
-    
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-        <img src="/img/icons/icon-climate.svg" alt="Education Tag">
-        <subtitle class="text-center">Climate</subtitle>
-      
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-          <img src="/img/icons/icon-consumer.svg" alt="Education Tag">
-          <subtitle class="text-center">Consumer</subtitle>
-        
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-            <img src="/img/icons/icon-ecosystem.svg" alt="Education Tag">
-            <subtitle class="text-center">Eco-System</subtitle>
-          
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-              <img src="/img/icons/icon-energy.svg" alt="Education Tag">
-              <subtitle class="text-center">Energy</subtitle>
+        <div class="container border-bottom">
+          <div class="row main-categories d-flex justify-content-center">
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
             
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-                <img src="/img/icons/icon-finance.svg" alt="Education Tag">
-                <subtitle class="text-center">Finance</subtitle>
+              <img src="/img/icons/icon-sets-all-01.svg" alt="Education Tag" />
+            
               
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-                  <img src="/img/icons/icon-health.svg" alt="Education Tag">
-                  <subtitle class="text-center">Health</subtitle>
-                
-    </div>
-    
-    <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-        <img src="/img/icons/icon-localgovernment.svg" alt="Education Tag">
-        <subtitle class="text-center">Local Government</subtitle>
-      
-</div>
+              <subtitle class="text-center">Public Safety</subtitle>
+            </div>
 
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-02.svg" alt="Education Tag" />
+              <subtitle class="text-center">Education</subtitle>
+            </div>
 
-  <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-    <img src="/img/icons/icon-manufacturing.svg" alt="Education Tag">
-    <subtitle class="text-center">Manufacturing</subtitle>
-  
-  </div>
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-03.svg" alt="Education Tag" />
+              <subtitle class="text-center">Climate</subtitle>
+            </div>
 
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-04.svg" alt="Education Tag" />
+              <subtitle class="text-center">Consumer</subtitle>
+            </div>
 
-  <div class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center">
-    <img src="/img/icons/icon-publicsafety.svg" alt="Education Tag">
-    <subtitle class="text-center">Public Safety</subtitle>
-  
-  </div>
-  
-  
-  
-  
-  
-  
-  </div>
-</div>
-</div>
-<!-- Categories End -->
- <!-- chart Areas-->
- <div class="container bg-white mt-5 mb-5 bg-light">
-    <div class="row charts d-flex justify-content-center">
-        
-        <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-2 border-bottom ">
-            <canvas height="250px" id="piechart" ></canvas>
-      
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-05.svg" alt="Education Tag" />
+              <subtitle class="text-center">Eco-System</subtitle>
+            </div>
+
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-06.svg" alt="Education Tag" />
+              <subtitle class="text-center">Energy</subtitle>
+            </div>
+
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-07.svg" alt="Education Tag" />
+              <subtitle class="text-center">Finance</subtitle>
+            </div>
+
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img
+                src="/img/icons/icon-sets-all-08.svg"
+                alt="Education Tag"
+              />
+              <subtitle class="text-center">Health</subtitle>
+            </div>
+
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img
+                src="/img/icons/icon-sets-all-09.svg"
+                alt="Education Tag"
+              />
+              <subtitle class="text-center">Local Government</subtitle>
+            </div>
+
+            <div
+              class="col col-sm-3 col-md-2 col-lg-2 col-xs-4 d-flex flex-column justify-content-center"
+            >
+              <img src="/img/icons/icon-sets-all-10.svg" alt="Education Tag" />
+              <subtitle class="text-center">Manufacturing</subtitle>
+            </div>
+          </div>
         </div>
-        
-        <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12  border-bottom">
-            <canvas height="250px" id="bar-chart-horizontal" ></canvas>
-      
-        </div>
-          
       </div>
-       <!-- chart Areas END-->
- </div>
+      <!-- Categories End -->
+      <!-- chart Areas-->
+      <div class="container bg-white mt-5 mb-5 bg-light">
+        <div class="row charts d-flex justify-content-center">
+          <div
+            class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-2 border-bottom "
+          >
+            <canvas height="250px" id="piechart"></canvas>
+          </div>
 
+          <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12  border-bottom">
+            <canvas height="250px" id="bar-chart-horizontal"></canvas>
+          </div>
+        </div>
+        <!-- chart Areas END-->
+      </div>
 
- <div class="footer">
-   
- </div>
-</div>
+      <div class="footer bg-dark text-white">
+        <!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
 
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© <span id="Copyright-date"></span> Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    </div>
+    </div>
 
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
- 
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/vendor/jquery-3.4.1.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="node_modules/chart.js/dist/Chart.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="css/bootstrap/js/bootstrap.js"></script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script>
+      var d = new Date();
+      var year= d.getFullYear()	;
+    $("#Copyright-date").text(year);
+    </script>
+    <script src="css/bootstrap/js/bootstrap.js"></script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>

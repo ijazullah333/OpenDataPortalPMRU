@@ -15,9 +15,12 @@
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #2e2e2e;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-banner {
@@ -55,15 +58,18 @@ h1, h2, h3, h4 {
   cursor: pointer;
 }
 
-.main-categories .col img {
-  height: 100%;
-  color: gray;
-}
-
-.main-categories .col img:hover {
-  padding: 5px;
+.main-categories .col:hover {
+  background-color: #e9e9e9;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+}
+
+.main-categories .col img {
+  height: 75%;
+}
+
+.main-categories subtitle {
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 768px) {
